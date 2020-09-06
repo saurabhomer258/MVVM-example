@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.loginapp.R;
+import com.example111.saurabhomer.firebaseauth.model.UserData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -88,6 +89,15 @@ public class RegisterFragment extends Fragment {
                                     // Sign in success, update UI with the signed-in user's information
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     ((MainActivity)getActivity()).openHomeActivity();
+
+                                    UserViewModel userViewModel = new UserViewModel(App.appContext);
+                                    UserData userData = new UserData();
+                                    if (user!=null) {
+
+
+                                            userData.setName(email.getText().toString());
+                                           userViewModel.insert(userData);
+                                    }
                                     ((MainActivity)getActivity()).hideProgressBar();
                                 }
                                 else {

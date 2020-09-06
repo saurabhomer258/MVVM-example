@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.loginapp.R;
+import com.example111.saurabhomer.firebaseauth.model.UserData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -76,6 +77,13 @@ public class LoginFragment extends Fragment {
                                     // Sign in success, update UI with the signed-in user's information
                                     ((MainActivity)getActivity()).hideProgressBar();
                                     FirebaseUser user = mAuth.getCurrentUser();
+                                    UserViewModel userViewModel = new UserViewModel(App.appContext);
+                                    UserData userData = new UserData();
+                                    if (user != null) {
+
+                                        userData.setName(emailEdittext.getText().toString());
+                                        userViewModel.insert(userData);
+                                    }
                                     ((MainActivity)getActivity()).openHomeActivity();
                                 }
                                 else {
