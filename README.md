@@ -17,7 +17,7 @@ This project is only for learners how want to learn basic of these things .(frag
 Very soon I will make a blog and explain how to work these technology with all the steps. 
 
 app scrren Video is in bellow link.please checkout.
-
+https://drive.google.com/file/d/1bAZMiUKcIJura2BVowfDj3ys2F8-xKgn/view?usp=sharing
 
 Till now Bye Bye, happy learning....
 
