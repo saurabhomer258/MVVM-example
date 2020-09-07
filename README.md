@@ -10,13 +10,13 @@ After complete login process successful ,home page will be show.
 
 Used Libraries :
 
-This is a basic project where I used fragment, pagerAdapter ,Firebase auth , Live data , Room database with MVVM pattern.
+This is a basic project where I used fragment, pager adapter , Firebase auth , Live data , Room database with MVVM pattern.
 
 This project is only for learners how want to learn basic of these things .(fragment, pagerAdapter ,Firebase auth , Live data , Room database with MVVM pattern).
 
-Very soon I will make a blog and explain how to work these technology with all the steps. 
+Very soon I will make a blog and explain how to work this technology with all the steps. 
 
-app scrren Video is in bellow link.please checkout.
+App screen Video is in the bellow link. please checkout.
 https://drive.google.com/file/d/1bAZMiUKcIJura2BVowfDj3ys2F8-xKgn/view?usp=sharing
 
 Till now Bye Bye, happy learning....
